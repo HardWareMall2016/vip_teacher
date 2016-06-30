@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:minHeight="@dimen/min_item_height"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/search_student_name"/>
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:hint="@string/search_name"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/text_size_normal"
+            android:background="@null"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/search_change_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:minHeight="@dimen/min_item_height"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/search_chang_lesson_type"/>
+
+        <TextView
+            android:id="@+id/tv_search_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/search_please_change"
+            android:gravity="right"
+            android:textColor="@color/blue"
+            />
+        <ImageView
+            android:id="@+id/right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow_right"/>
+    </LinearLayout>
+
+
+    <com.zhan.framework.ui.widget.RippleButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        android:text="@string/search_title"
+        android:layout_marginTop="10dp"
+        ripple:rv_type="rectangle"
+        ripple:rv_zoom="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        style="@style/text_white_bg_blue_btn_style"/>
+
+</LinearLayout>

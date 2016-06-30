@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:id="@+id/rl_student"
+    >
+
+    <RelativeLayout
+        android:id="@+id/student_frag_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/action_bar_bg_color"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:text="@string/student_mine"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/bg_student_search_selector"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/student_frag_ll"
+        android:layout_below="@+id/student_frag_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/student_lessoning"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dark_blue_underline"
+            android:gravity="center"
+            android:text="@string/student_lesson_in_college"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_normal" />
+        <TextView
+            android:id="@+id/student_lesson_again"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/student_lesson_again"
+            android:textColor="@color/student_title"
+            android:textSize="@dimen/text_size_normal" />
+        <TextView
+            android:id="@+id/student_lesson_finish"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/student_lesson_finish"
+            android:textColor="@color/student_title"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_below="@+id/student_frag_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="7dp">
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="?attr/selectableItemBackground"
+                android:smoothScrollbar="true"
+                android:background="@color/white"/>
+    </LinearLayout>
+
+    <include
+        android:id="@id/layoutLoading"
+        layout="@layout/comm_lay_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@id/layoutLoadFailed"
+        layout="@layout/comm_lay_loadfailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+   <!-- <include
+        android:id="@id/layoutEmpty"
+        layout="@layout/comm_lay_emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+-->
+    <ImageView
+        android:id="@id/layoutEmpty"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/no_course"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

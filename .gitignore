@@ -1,0 +1,11 @@
+*.iml
+.gradle
+/local.properties
+/build
+/.idea
+framework/framework.iml
+vip_teacher/vip_teacher.iml
+/vip_teacher/src/main/res/drawable-xxhdpi/spoken_square_record.png
+/vip_teacher/src/main/res/drawable-xxhdpi/spoken_square_record_pressed.png
+/vip_teacher/src/main/res/drawable/teach_lesson_selector.xml
+EventBus/build/

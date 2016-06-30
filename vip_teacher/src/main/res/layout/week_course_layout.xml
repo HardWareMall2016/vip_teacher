@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flow="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhan.vip_teacher.ui.widget.CalendarGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhan.vip_teacher.ui.widget.CalendarRowView
+            android:id="@+id/calendar_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingBottom="4dp">
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="时间" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sun" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mon" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tue" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wed" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Thu" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Fri" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sat" />
+        </com.zhan.vip_teacher.ui.widget.CalendarRowView>
+    </com.zhan.vip_teacher.ui.widget.CalendarGridView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.zhan.vip_teacher.ui.widget.FixHeightCachedViewPager
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:clipToPadding="false" />
+    </ScrollView>
+
+    <com.zhan.vip_teacher.ui.widget.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        flow:horizontalSpacing="6dip"
+        flow:orientation="horizontal"
+        flow:verticalSpacing="12dip">
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/first_lesson"
+            flow:name="@string/first_lesson" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/missing_lesson"
+            flow:name="@string/missing_lesson" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/first_lesson_feedback"
+            flow:name="@string/first_lesson_feedback" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/begun_lesson"
+            flow:name="@string/begun_lesson" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/absenteeism"
+            flow:name="@string/absenteeism" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/be_late"
+            flow:name="@string/be_late" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/finish_lesson_early"
+            flow:name="@string/finish_lesson_early" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/open_course"
+            flow:name="@string/open_course" />
+
+        <com.zhan.vip_teacher.ui.widget.WeekCourseTipView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            flow:divColor="@color/open_course_finished"
+            flow:name="@string/open_course_finished" />
+
+    </com.zhan.vip_teacher.ui.widget.FlowLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.zhan.vip_teacher"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 110
+        versionName "1.1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    /*allprojects {
+        repositories {
+            mavenCentral()
+        }
+    }*/
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':framework')
+    compile project(':sql-orm')
+    compile files('libs/universalimageloader.jar')
+    compile files('libs/jpush-android-2.1.0.jar')
+    compile 'com.melnykov:floatingactionbutton:1.0.7'
+    /*compile files('libs/umeng-analytics-v5.6.7.jar')*/
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'org.greenrobot:eventbus:3.0.0'
+}

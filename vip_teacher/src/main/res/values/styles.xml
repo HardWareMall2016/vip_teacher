@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="OverlayTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+    </style>
+
+    <!--<style name="CalendarTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>-->
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <item name="android:textSize">18sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minHeight">70dp</item>
+    </style>
+
+    <style name="CalendarCell.XHead">
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">70dp</item>
+    </style>
+
+
+    <!-- 字体白色背景蓝色按钮式样 -->
+    <style name="text_white_bg_blue_btn_style">
+        <item name="android:textColor">@drawable/text_color_white_selector</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:minHeight">46dp</item>
+        <item name="android:background">@drawable/bg_blue_rounded_selector</item>
+    </style>
+
+    <!-- 字体白色背景蓝色按钮式样 -->
+    <style name="text_white_bg_blue_half_circle_btn_style">
+        <item name="android:textColor">@drawable/text_color_white_selector</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:minHeight">46dp</item>
+        <item name="android:background">@drawable/bg_blue_half_circle_selector</item>
+    </style>
+
+    <style name="pop_menu_animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_exit</item>
+    </style>
+
+   <!-- <style name="main_input_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_edittext_height</item>
+        <item name="android:background">@drawable/mc_shape_border_button_transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/activity_extra_small_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_extra_small_margin</item>
+        <item name="android:keyTextSize">8sp</item>
+        <item name="android:textSize">8sp</item>
+    </style>-->
+    
+
+    <style name="CustomTextInputLayoutStyle.ErrorTextStyle" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+</resources>

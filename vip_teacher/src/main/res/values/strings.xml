@@ -1,0 +1,192 @@
+<resources>
+    <string name="app_name">小站教师平台</string>
+
+    <string name="json_syntax_error">数据格式错误</string>
+    <string name="utils_token_timeout">token无效或者已过期，请重新登录!</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="loading">努力加载中...</string>
+
+    <!--版本升级-->
+    <string name="new_version">发现新版本</string>
+    <string name="update_now">立即更新</string>
+
+    <!-- 课程 -->
+    <string name="course_title">课程</string>
+    <string name="date_schedule">日课表</string>
+    <string name="week_schedule">周课表</string>
+    <string name="schedule">课程表</string>
+    <string name="sign_in_success">亲，恭喜你签到成功~</string>
+    <string name="sign_in_no_lesson">亲，还没到签到时间哟~</string>
+    <string name="select_course_status">请选择上课状态</string>
+    <string name="select_homework_score">作业打分</string>
+    <string name="sign_status_unsign">待签到</string>
+    <string name="sign_status_forget">忘记签到</string>
+    <string name="sign_status_on_time">准时</string>
+    <string name="sign_status_warning">警告</string>
+    <string name="sign_status_be_late">迟到</string>
+    <string name="feedback_too_early">课程结束后才能反馈哦!</string>
+    <string name="feedback_no_open_course">公开课没有反馈哦!</string>
+    <string name="course_status_empty">请选择上课状态！</string>
+    <string name="course_status_in_time">正常上课</string>
+    <string name="course_status_student_late">学生迟到</string>
+    <string name="course_status_student_absenteeism">学生旷课</string>
+    <string name="course_status_early">提前下课</string>
+    <string name="course_status_teacher_absenteeism">教师未上课</string>
+    <string name="course_status_abnormal">课程异常</string>
+    <string name="course_content_too_short">课程内容长度小于10！</string>
+    <string name="homework_too_short">本堂课后作业长度小于10！</string>
+    <string name="student_feedback_too_short">学习反馈信息长度小于10！</string>
+    <string name="please_select_homework_score">请选择</string>
+    <string name="feedback_submitting">提交中，请稍后...</string>
+    <string name="feedback_submitting_success">提交成功!</string>
+    <string name="unfeedback_course">待反馈课程</string>
+    <string name="lesson_status_name">上课状态 ：</string>
+    <string name="lesson_status_no_lesson">未上课</string>
+    <string name="title_student">学生：</string>
+    <string name="title_sign_status">签到状态：</string>
+    <string name="sign_tip">亲，现在可以开始签到啦~</string>
+    <string name="sign_in">请签到</string>
+    <string name="course_empty">亲，暂时没有课程安排~</string>
+    <string name="title_feedback">课后反馈</string>
+    <string name="submit_feedback">课后反馈</string>
+    <string name="feedback_course_type">课程：</string>
+    <string name="feedback_student">学生：</string>
+    <string name="feedback_qq">学生QQ：</string>
+    <string name="feedback_class_teacher">班主任：</string>
+    <string name="feedback_course_number">总课时数：</string>
+    <string name="feedback_target">保分目标：</string>
+    <string name="feedback_lesson_status">上课状态</string>
+    <string name="feedback_task_status">作业打分</string>
+    <string name="remind_for_class_success">催课成功！</string>
+    <string name="remind_for_class_no_lesson">还没到催课的时间！</string>
+
+    <!-- 上课状态 -->
+    <string name="first_lesson">首课</string>
+    <string name="missing_lesson">未上课</string>
+    <string name="first_lesson_feedback">有反馈首课</string>
+    <string name="begun_lesson">已上课</string>
+    <string name="absenteeism">学生旷课</string>
+    <string name="be_late">学生迟到</string>
+    <string name="finish_lesson_early">提前下课</string>
+    <string name="open_course">公开课</string>
+    <string name="open_course_finished">已上公开课</string>
+    <!-- 课程类型分类 -->
+    <string name="course_type_listening">听力</string>
+    <string name="course_type_spoken">口语</string>
+    <string name="course_type_reading">阅读</string>
+    <string name="course_type_writing">写作</string>
+    <string name="course_type_vocabulary">词汇</string>
+    <string name="course_type_math">数学</string>
+    <string name="course_type_gap_filling">填空</string>
+    <string name="course_type_science">科学</string>
+    <string name="course_type_ratiocination">推理</string>
+    <string name="course_type_corrector">改错</string>
+    <string name="course_type_grammar">语法</string>
+
+    <!-- 学生-->
+    <string name="student_title">学生</string>
+    <string name="student_mine">我的学生</string>
+    <string name="search_name">请输入学生姓名</string>
+    <string name="search_chang_lesson">请输入学生姓名或选择课程进度</string>
+    <string name="student_lesson_plan">课程进度：</string>
+    <string name="student_lesson_ture_name">班主任：</string>
+    <string name="student_lesson_schedulecount">完成课时：</string>
+    <string name="student_lessoning">上课</string>
+    <string name="student_lesson_in_college">正课</string>
+    <string name="student_lesson_again">重读</string>
+    <string name="student_lesson_finish">完结</string>
+
+    <!--学生课表-->
+    <string name="student_course">学生的课表</string>
+
+    <!--搜索-->
+    <string name="search_title">搜索</string>
+    <string name="search_student_name">学生姓名</string>
+    <string name="search_chang_lesson_type">课程进度</string>
+    <string name="search_please_change">请选择</string>
+    <string name="search_result">搜索结果</string>
+
+    <!--学生档案-->
+    <string name="student_info_title">学生档案</string>
+    <string name="student_info_first_beizhu">首次备注：</string>
+    <string name="student_info_change_history_lesson">选择历史考试</string>
+    <string name="student_info_xueli">学历：</string>
+    <string name="student_info_school">学校:</string>
+    <string name="student_info_province">省市：</string>
+    <string name="student_info_vip">VIP等级:</string>
+    <string name="student_info_lesson_name">课程名称：</string>
+    <string name="student_info_exam_data">考试日期：</string>
+    <string name="student_info_lesson_type">课程类型：</string>
+    <string name="student_info_goal">保分目标：</string>
+    <string name="student_info_count_lesson">总课时：</string>
+    <string name="student_info_reread">重读次数：</string>
+    <string name="student_info_reread_data">重读申请日期：</string>
+    <string name="student_info_next_mark">下次考试目标分数：</string>
+    <string name="student_info_next_data">下次考试日期：</string>
+    <string name="student_info_history_test">历史考试</string>
+    <string name="student_info_change_first">第1次</string>
+    <string name="student_info_test_type">考试类型：</string>
+    <string name="student_info_test_lesson">考试课程：</string>
+    <string name="student_info_test_data">考试日期：</string>
+    <string name="student_info_test_all_mark">总成绩：</string>
+    <string name="student_info_classify_mark">分类成绩：</string>
+    <string name="student_info_remarks">备注：</string>
+    <string name="student_info_syllabus">课程表</string>
+    <string name="studeng_info_course_information">课程信息</string>
+
+
+    <!-- 消息-->
+    <string name="message_title">消息</string>
+    <string name="message_center">消息中心</string>
+
+    <!-- 我的-->
+    <string name="mine_title">我的</string>
+    <string name="mine_lesson">我的课次</string>
+    <string name="mine_signature">我的签到</string>
+    <string name="mine_lessoned_count">本月已排课总数</string>
+    <string name="mine_no_singin_count">本月未签到总数</string>
+    <string name="my_lesson_lessoned">已上课</string>
+    <string name="my_signature_ontime">准时</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="download_ten_data">10条数据载入中</string>
+    <!-- 设置-->
+    <string name="mine_setting">设置</string>
+    <string name="mine_setting_lesson">上课提醒设置</string>
+    <string name="mine_setting_opinion">给我们的意见</string>
+    <string name="mine_setting_clear_cache">清除缓存</string>
+    <string name="mine_setting_clear_cache_finish">缓存清除完毕！</string>
+    <string name="mine_setting_feedback_title">意见反馈</string>
+    <string name="mine_setting_feedback_empty">请填写反馈内容!</string>
+    <string name="mine_setting_feedback_submit_success">反馈已经成功提交!</string>
+    <string name="mine_setting_feedback">反馈您的宝贵意见和建议</string>
+
+    <string name="mine_setting_quit">退出登录</string>
+    <string name="my_setting_quit">退出账号</string>
+    <string name="mine_person">个人信息</string>
+    <string name="mine_person_change_password">修改密码</string>
+    <string name="mine_person_teacher_name">教师姓名</string>
+    <string name="mine_person_teacher_phone">手机号码</string>
+    <string name="mine_person_teacher_qq">QQ</string>
+    <string name="mine_person_teacher_address">居住地址</string>
+    <string name="modify_current_code">请输入当前密码</string>
+    <string name="modify_new_password">请输入6-16位新密码</string>
+    <string name="modify_again_password">请再次输入密码</string>
+    <string name="finish">完成</string>
+    <string name="pwd_empty">密码不能为空</string>
+    <string name="reinput_pwd">请再次输入密码</string>
+    <string name="pwd_length_error">密码必须为6-16位</string>
+    <string name="re_pwd_not_equal">两次输入的密码不相同</string>
+    <string name="chang_password">修改密码中，请稍后...</string>
+    <string name="chang_password_finish">登录密码修改成功！\n请重新登录</string>
+
+    <!-- 登录 -->
+    <string name="login_title">登录</string>
+    <string name="login_input_number">USERNAME</string>
+    <string name="login_input_pwd">PASSWORD</string>
+    <string name="login_logining">登录中，请稍后...</string>
+    <string name="login_success">登录成功！</string>
+    <string name="network_disconnect">没有可用网络</string>
+    <string name="network_timeout">请求超时，请重试!</string>
+
+</resources>

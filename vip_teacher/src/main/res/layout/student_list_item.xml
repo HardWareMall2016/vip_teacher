@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhan.framework.ui.widget.MaterialRippleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+    app:mrl_rippleAlpha="0.2"
+    app:mrl_rippleColor="#585858"
+    app:mrl_rippleHover="true"
+    app:mrl_rippleOverlay="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.zhan.framework.ui.widget.CircleImageView
+            android:id="@+id/student_list_item_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/student_avatar"
+            circle_image:border_width="0dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/student_lesson_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/student_list_item_head"
+            android:paddingBottom="16dp"
+            android:paddingTop="14dp">
+
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/text_color_content"
+                android:textSize="@dimen/text_size_large"
+                android:text="123"
+                />
+
+            <TextView
+                android:id="@+id/student_lesson_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/student_name"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="8dp"
+                android:text="123"
+                />
+
+            <TextView
+                android:id="@+id/student_lesson_ture_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/student_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/student_lesson_plan"
+                android:textColor="@color/text_color_supplementary"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="8dp"
+                android:text="123"
+                />
+
+            <TextView
+                android:id="@+id/student_lesson_schedulecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/student_lesson_ture_name"
+                android:textColor="@color/text_color_supplementary"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="4dp"
+                android:text="123"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/student_lesson_content"
+            android:layout_below="@id/student_lesson_content"
+            android:background="@color/divider_color" />
+
+    </RelativeLayout>
+
+
+</com.zhan.framework.ui.widget.MaterialRippleRelativeLayout >

@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_image="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/studeng_info_head_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/student_info_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#20A6FB"
+                            android:minHeight="@dimen/min_item_height"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="8dp"
+                            android:src="@drawable/action_bar_icon_back" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="32dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/student_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/white"
+                                    android:textSize="30dp" />
+
+                                <ImageView
+                                    android:id="@+id/student_sex"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/student_name"
+                                    android:gravity="center_vertical" />
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/student_age"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:id="@+id/student_QQ"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/toubu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                        <com.zhan.framework.ui.widget.CircleImageView
+                            android:id="@+id/student_head"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/student_head_bg"
+                            android:src="@drawable/student_info_avatar"
+                            android:layout_centerVertical="true"
+                            circle_image:border_width="0dp"
+                            />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/student_head"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_rl1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rl1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp">
+
+                                <TextView
+                                    android:id="@+id/xueli"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/student_info_xueli"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/student_educational"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/xueli"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/rl1"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="16dp"
+                                android:paddingTop="10dp">
+
+                                <TextView
+                                    android:id="@+id/school"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/student_info_school"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/student_school"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/school"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_rl1">
+
+                            <RelativeLayout
+                                android:id="@+id/rl2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="6dp">
+
+                                <TextView
+                                    android:id="@+id/province"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/student_info_province"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/student_province"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/province"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_toRightOf="@+id/rl2"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="6dp">
+
+                                <TextView
+                                    android:id="@+id/vip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/student_info_vip"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/student_vip"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/vip"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="14dp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#DDDDDD"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_yellow_half_circle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/studeng_info_course_information"
+                    android:textColor="#FFFFFD"
+                    android:textSize="@dimen/text_size_small" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_student_lesson_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/student_info_lesson_name"
+                        android:textColor="@color/text_color_supplementary"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/student_lesson_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_student_lesson_name"
+                        android:textColor="@color/text_color_title"
+                        android:textSize="@dimen/text_size_small" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_exam_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_exam_data"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_exam_data"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_exam_data"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_lesson_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_lesson_type"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_lesson_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_lesson_type"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_goal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_goal"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_goal"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_goal"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_count_lesson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_count_lesson"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_count_lesson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_count_lesson"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_reread"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_reread"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_reread"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_reread"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_reread_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_reread_data"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_reread_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_reread_data"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_next_mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_next_mark"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_next_mark"
+                            android:layout_width="52dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_next_mark"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_next_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_next_data"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_next_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_student_next_data"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.zhan.vip_teacher.view.MyGridView
+                    android:id="@+id/student_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="14dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="18dp">
+
+                    <TextView
+                        android:id="@+id/beizhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/student_info_first_beizhu"
+                        android:textColor="@color/text_color_supplementary"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/student_first_remarks"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_toRightOf="@+id/beizhu"
+                        android:maxLines="1"
+                        android:textColor="@color/text_color_title"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <ImageView
+                        android:id="@+id/student_lesson_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/arrow_down"
+                        android:visibility="gone" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#DDDDDD"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/student_lesson_history_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_white"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/min_item_height"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_student_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_yellow_half_circle"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/student_info_history_test"
+                        android:textColor="#FFFFFD"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/bg_blue_border"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/student_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="@string/student_info_change_first"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <ImageView
+                            android:id="@+id/student_history_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/arrow_down_samall" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_student_test_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/student_info_test_type"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/student_test_type"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/tv_student_test_type"
+                                android:textColor="@color/text_color_title"
+                                android:textSize="@dimen/text_size_small" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_student_test_lesson"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/student_info_test_lesson"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/student_test_lesson"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/tv_student_test_lesson"
+                                android:textColor="@color/text_color_title"
+                                android:textSize="@dimen/text_size_small" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_student_test_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/student_info_test_data"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/student_test_data"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/tv_student_test_data"
+                                android:textColor="@color/text_color_title"
+                                android:textSize="@dimen/text_size_small" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_student_all_mark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/student_info_test_all_mark"
+                                android:textColor="@color/text_color_supplementary"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <TextView
+                                android:id="@+id/student_all_mark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/tv_student_all_mark"
+                                android:textColor="@color/text_color_title"
+                                android:textSize="@dimen/text_size_small" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_student_classify_mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_classify_mark"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_classify_mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_student_remarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_info_remarks"
+                            android:textColor="@color/text_color_supplementary"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/student_remarks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_title"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/student_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_white"
+                android:minHeight="@dimen/min_item_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/student_info_course" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="3"
+                    android:text="@string/student_info_syllabus"
+                    android:textColor="@color/text_color_content"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/right_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
